@@ -3,7 +3,8 @@
 This project demonstrates a simple Python program to generate **Pascal’s Triangle**, where the number of rows is provided by the user.
 
 ---
-
+## NAME: Jisha Bossne SJ
+## REGISTER NUMBER: 212224230106
 ## 🎯 Aim
 
 To write a Python program that generates **Pascal's Triangle** using numbers. The number of rows is accepted from the user.
@@ -27,9 +28,20 @@ To write a Python program that generates **Pascal's Triangle** using numbers. Th
 ---
 
 ## 🧪 Program
-Add Code Here
-
+```
+def triangle(n):
+    for i in range(n):
+        num=1
+        row=[]
+        for j in range(i+1):
+            row.append(num)
+            num=num*(i-j)//(j+1)
+        print(*row)
+n=int(input())
+triangle(n)
+```
 ## Sample Output
+![image](https://github.com/user-attachments/assets/5162b987-1a82-4714-bb92-c314b76fd276)
 
 ## Result
-
+Thus,the program is executed successfully.
